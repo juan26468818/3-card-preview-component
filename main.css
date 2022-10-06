@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+html{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+    font-size: 15px;
+    color: var(--Very-light-gray);
+}
+body{
+    height: 100vh;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Very-light-gray);
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 60rem;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+.card-container{
+    padding: 3rem;
+}
+.first-card{
+    flex:1;
+    background-color: var(--Bright-orange);
+}
+.second-card{
+    flex:1;
+    background-color: var(--Dark-cyan);
+}
+.third-card{
+    flex:1;
+    background-color: var(--Very-dark-cyan);
+}
+h2{
+    margin: 1.5rem 0;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2rem;
+}
+p{
+    color: var(--Transparent-white);
+}
+.first-card > button{
+    color: var(--Bright-orange)
+}
+.second-card > button{
+    color: var(--Dark-cyan)
+}
+.third-card > button{
+    color: var(--Very-dark-cyan)
+}
+button{
+    margin: 4rem 0 0 0;
+    background: var(--Very-light-gray);
+    padding: .5rem 1.5rem;
+    border-radius: 1.5rem;
+    border: 2px solid var(--Very-light-gray);
+}
