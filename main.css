@@ -15,7 +15,7 @@ html{
     color: var(--Very-light-gray);
 }
 body{
-    height: 100vh;
+    min-height: 100vh;
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -31,6 +31,9 @@ main{
 }
 .card-container{
     padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .first-card{
     flex:1;
@@ -67,4 +70,8 @@ button{
     padding: .5rem 1.5rem;
     border-radius: 1.5rem;
     border: 2px solid var(--Very-light-gray);
+}
+button:hover{
+    color: var(--Very-light-gray);
+    background-color: transparent;
 }
